@@ -9,12 +9,12 @@ class App extends Component {
   }
   render() {
     return [
-      <div>
+      <div key="header">
         <Link to="/">Home</Link>
         <br />
         <Link to="/product">Product</Link>
       </div>,
-      <Routes />,
+      <Routes key="routes" />,
     ]
   }
 }
